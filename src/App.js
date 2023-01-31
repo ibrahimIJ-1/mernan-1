@@ -1,9 +1,17 @@
-import './App.css';
+import React, { FC,Suspense } from 'react';
 
-function App() {
+import './App.scss';
+
+/* import components  */
+import Home from './pages/Home/Home';
+
+
+const App: FC = ()=> {
   return (
-    <div className="App">
-      
+    <div className="app">
+        <Suspense fallback={null}>
+            <Home/>
+        </Suspense>
     </div>
   );
 }
