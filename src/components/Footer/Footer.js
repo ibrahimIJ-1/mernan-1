@@ -1,4 +1,4 @@
-import React , {useState , useContext} from 'react';
+import React , {useState , useContext , useRef} from 'react';
 
 //** state management */
 import {StateContext} from '../StateProvider';
@@ -11,7 +11,7 @@ import logo from '../../assets/images/mernan.png';
 
 //** translation  */
 import { useTranslation } from 'react-i18next';
-// import i18next from 'i18next';
+import i18next from 'i18next';
 
 //**import icons from react-icons */
 import { BsArrowRight } from "react-icons/bs";
@@ -29,9 +29,22 @@ import { AiFillInstagram } from "react-icons/ai";
 const Footer = () => {
 
     //** this is state to change side rtl and ltr */
-  const { changeSide  } = useContext(StateContext)
+    const { changeSide  , setChangeSide } = useContext(StateContext)
 
     const { t } = useTranslation();
+
+    const ref = useRef();
+
+     //** function to change language from english to arabic or from arabic to english */
+    const ChangeLanguage = ()=>{
+    if(ref.current.innerText === "اللغة الإنجليزية"){
+        i18next.changeLanguage('en')
+        setChangeSide("en");
+    }else{
+        i18next.changeLanguage('ar')
+        setChangeSide("ar");
+    }
+}
 
     return (
     <div className="footer" dir={`${changeSide === "ar" ? "rtl" : "ltr"}`}>
@@ -94,8 +107,8 @@ const Footer = () => {
                     <li>
                         <a href="#">{t("privacy_policy")}</a>
                     </li>
-                    <li>
-                        <a href="#">{t("arabic_language")}</a>
+                    <li onClick={ChangeLanguage}>
+                        <a href="#" ref={ref}>{t("arabic_language")}</a>
                     </li>
                 </ul>
             </div>
@@ -104,14 +117,14 @@ const Footer = () => {
         <div className="social">
 
             <div className="media">
-                <a href="#"><FaLinkedin/></a>
+                <a href="https://linkedin.com"><FaLinkedin/></a>
                 <a href="https://facebook.com" target="_blank" rel="noreferrer"><FaFacebookF/></a>
-                <a href="#"><FaSnapchatGhost/></a>
-                <a href="#"><FaTiktok/></a>
-                <a href="#"><FaYoutube/></a>
-                <a href="#"><FaTwitter/></a>
-                <a href="#"><AiFillInstagram/></a>
-                <a href="#"><FaBehance/></a>
+                <a href="https://snapchat.com"><FaSnapchatGhost/></a>
+                <a href="https://tiktok.com"><FaTiktok/></a>
+                <a href="https://youtube.com"><FaYoutube/></a>
+                <a href="https://twitter.com"><FaTwitter/></a>
+                <a href="https://instegram.com"><AiFillInstagram/></a>
+                <a href="https://behance.com"><FaBehance/></a>
             </div>
 
             <div className="copy_right">
