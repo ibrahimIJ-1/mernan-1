@@ -1,8 +1,20 @@
 {
     "services": "Services",
+    "our_services": "Our Services",
     "what_makes_difference": "What Makes Difference",
     "request_free_consulting": "Request Free Consulting",
     "pricing": "Pricing",
     "blog": "Blog",
-    "work_with_us": "Work With Us"
+    "work_with_us": "Work With Us",
+    "frequently_asked_questions":"Frequently Asked Questions",
+    "contact_us":"Contact Us",
+    "about_mernan":"About Mernan",
+    "join_us":"Join Us",
+    "more":"More",
+    "join_our_team":"Join Our Team",
+    "our_partners":"Our Partners",
+    "terms_and_Conditions":"Terms and Conditions",
+    "privacy_policy":"Privacy Policy",
+    "arabic_language":"Arabic Language",
+    "copy_right":"All Rights Reserved @ Mernan"
 }

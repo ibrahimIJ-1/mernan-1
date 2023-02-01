@@ -85,4 +85,33 @@
             }
         }
     }
+    .social{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+
+        .media{
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            width: 40%;
+
+            a{
+                color: var(--color2);
+                font-size: 36px;
+            }
+        }
+        .copy_right{
+            margin-top: 30px;
+            span{
+                font-family: 'Almarai';
+                font-style: normal;
+                font-weight: 400;
+                font-size: 25px;
+                line-height: 140%;
+                color: #312E3A;
+            }
+        }
+    }
 }

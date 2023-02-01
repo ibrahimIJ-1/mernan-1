@@ -1,8 +1,20 @@
 {
     "services": "خدماتنا",
+    "our_services": "خدماتنا",
     "what_makes_difference": "مالذي يميزنا",
     "request_free_consulting": "اطلب استشارة مجانية",
     "pricing": "الأسعار",
     "blog": "المدونة",
-    "work_with_us": "ابدأ العمل معنا"
+    "work_with_us": "ابدأ العمل معنا",
+    "frequently_asked_questions":"الأسئلة الشائعة",
+    "contact_us":"تواصل معنا",
+    "about_mernan":"عن مرنان",
+    "join_us":"انضم لنا",
+    "more":"المزيد",
+    "join_our_team":"انضم لفريقنا",
+    "our_partners":"شركاؤنا",
+    "terms_and_Conditions":"الشروط والأحكام",
+    "privacy_policy":"سياسات الخصوصية",
+    "arabic_language":"اللغة الإنجليزية",
+    "copy_right":"جميع الحقوق محفوظة @ مرنان"
 }

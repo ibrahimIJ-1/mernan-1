@@ -16,8 +16,14 @@ import { useTranslation } from 'react-i18next';
 //**import icons from react-icons */
 import { BsArrowRight } from "react-icons/bs";
 import { BsArrowLeft } from "react-icons/bs";
-
-// import { Link } from "react-router-dom";
+import { FaFacebookF } from "react-icons/fa";
+import { FaLinkedin } from "react-icons/fa";
+import { FaSnapchatGhost } from "react-icons/fa";
+import { FaTiktok } from "react-icons/fa";
+import { FaYoutube } from "react-icons/fa";
+import { FaTwitter } from "react-icons/fa";
+import { FaBehance } from "react-icons/fa";
+import { AiFillInstagram } from "react-icons/ai";
 
 
 const Footer = () => {
@@ -46,57 +52,71 @@ const Footer = () => {
         </div>
         <div className="body">
             <div>
-                <h3>About Mernan</h3>
+                <h3>{t("about_mernan")}</h3>
                 <ul>
                     <li>
-                        <a href="@">Our Services</a>
+                        <a href="@">{t("our_services")}</a>
                     </li>
                     <li>
-                        <a href="@">What Makes Difference</a>
+                        <a href="@">{t("what_makes_difference")}</a>
                     </li>
                     <li>
-                        <a href="@">Pricing</a>
+                        <a href="@">{t("pricing")}</a>
                     </li>
                     <li>
-                        <a href="@">Blog</a>
+                        <a href="@">{t("blog")}</a>
                     </li>
                     <li>
-                        <a href="@">Frequently Asked Questions</a>
+                        <a href="@">{t("frequently_asked_questions")}</a>
                     </li>
                     <li>
-                        <a href="@">Contact Us</a>
+                        <a href="@">{t("contact_us")}</a>
                     </li>
                 </ul>
             </div>
             <div>
-                <h3>Join Us</h3>
+                <h3>{t("join_us")}</h3>
                 <ul>
                     <li>
-                        <a href="#">Join Our Team</a>
+                        <a href="#">{t("join_our_team")}</a>
                     </li>
                     <li>
-                        <a href="#">Our Partners</a>
+                        <a href="#">{t("our_partners")}</a>
                     </li>
                 </ul>
             </div>
             <div>
-                <h3>More</h3>
+                <h3>{t("more")}</h3>
                 <ul>
                     <li>
-                        <a href="#">Terms and Conditions</a>
+                        <a href="#">{t("terms_and_Conditions")}</a>
                     </li>
                     <li>
-                        <a href="#">Privacy Policy</a>
+                        <a href="#">{t("privacy_policy")}</a>
                     </li>
                     <li>
-                        <a href="#">Arabic Language</a>
+                        <a href="#">{t("arabic_language")}</a>
                     </li>
                 </ul>
             </div>
         </div>
 
         <div className="social">
-            <div></div>
+
+            <div className="media">
+                <a href="#"><FaLinkedin/></a>
+                <a href="https://facebook.com" target="_blank" rel="noreferrer"><FaFacebookF/></a>
+                <a href="#"><FaSnapchatGhost/></a>
+                <a href="#"><FaTiktok/></a>
+                <a href="#"><FaYoutube/></a>
+                <a href="#"><FaTwitter/></a>
+                <a href="#"><AiFillInstagram/></a>
+                <a href="#"><FaBehance/></a>
+            </div>
+
+            <div className="copy_right">
+                <span>{t("copy_right")}</span>
+            </div>
             <div></div>
         </div>
     </div>
