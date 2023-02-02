@@ -16,7 +16,7 @@ const Home = () => {
         <WhoUs/>
 
         {/* Footer */}
-        {/* <Footer/> */}
+        <Footer/>
     </div>
   )
 }

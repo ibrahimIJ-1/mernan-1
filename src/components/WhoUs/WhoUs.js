@@ -29,7 +29,7 @@ const WhoUs = () => {
                 {t("we_transfer_your_work")}
                 {" "}
                 <span>{t("world_full")}</span>
-                {/* {
+                {
                     changeSide === "en" && (
                         <div>
                         <div className="line1"></div>
@@ -37,7 +37,7 @@ const WhoUs = () => {
                         <div className="line3"></div>
                         </div>
                     )
-                }*/}
+                }
                 {
                     changeSide === "ar" && (
                         <div>
@@ -79,9 +79,9 @@ const WhoUs = () => {
             <button className={`${changeSide === "ar" && "portfolio_ar"} portfolio`}>{t("portfolio")}</button>
             </div>
         </div>
-        <div className={`${changeSide === "en" ? "image_en" : "image_ar"} image_`}>
+        <div className={`${changeSide === "ar" ? "image_ar" : "image_en"} image_`}>
             {
-                changeSide === "en" ? <img src={Hero} alt=""/> : <img src={Hero_ar} alt=""/> 
+                changeSide === "ar" ? <img src={Hero_ar} alt=""/> : <img src={Hero} alt=""/> 
             }
         </div>
     </div>

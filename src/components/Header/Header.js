@@ -49,7 +49,7 @@ const Header = () => {
               <img src={logo} alt=""/>
           </div>
           <div className="nav">
-            <ul className={`${changeSide === "en" ? "ul_en" : "ul_ar"}`}>
+            <ul className={`${changeSide === "ar" ? "ul_ar" : "ul_en"}`}>
               <li>
                 <a href="@">{t("services")}</a>
               </li>
@@ -71,7 +71,7 @@ const Header = () => {
                   <span>{t("work_with_us")}</span>
                   <span>
                     {
-                      changeSide === "en" ? <BsArrowRight className="arrow"/> : <BsArrowLeft className="arrow"/>
+                      changeSide === "ar" ? <BsArrowLeft className="arrow"/> : <BsArrowRight className="arrow"/>
                     }
                   </span>
                 </button>
