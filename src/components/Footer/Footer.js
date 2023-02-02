@@ -60,7 +60,7 @@ const Footer = () => {
                         changeSide === "en" ? <BsArrowRight className="arrow"/> : <BsArrowLeft className="arrow"/>
                     }
                 </span>
-                </button>
+            </button>
             </div>
         </div>
         <div className="body">

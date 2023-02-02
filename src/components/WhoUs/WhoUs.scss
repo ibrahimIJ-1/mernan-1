@@ -25,6 +25,7 @@
             line-height: 140%;
             text-transform:capitalize;
             height: 297px;
+            position: relative;
 
             span{
                 color:var(--color3)
@@ -32,7 +33,74 @@
             &.active{
                 font-size:81px;
                 width:90%;
-                padding-top:40px;
+                padding-top:50px;
+            }
+            .line1{
+                position: absolute;
+                top:100px;
+                right: 24%;
+                background:var(--color3);
+                transform: matrix(-1, 0, 0, 1, 0, 0);
+                width: 5.91px;
+                height: 25.06px;
+                border-radius: 4px;
+            }
+            .line2{
+                position: absolute;
+                top:100px;
+                right: 19%;
+                background:var(--color3);
+                transform: matrix(-1, 0, 0, 1, 0, 0);
+                width: 5.91px;
+                height: 46.06px;
+                border-radius: 5px;
+                transform: rotate(45deg);
+            }
+            .line3{
+                position: absolute;
+                top:150px;
+                right: 18%;
+                background:var(--color3);
+                transform: matrix(-1, 0, 0, 1, 0, 0);
+                width: 5.91px;
+                height: 25.06px;
+                border-radius: 4px;
+                transform: rotate(85deg);
+            }
+            .line4{
+                position: absolute;
+                top:100px;
+                left: 15%;
+                top:20px;
+                background:var(--color3);
+                transform: matrix(-1, 0, 0, 1, 0, 0);
+                width: 5.91px;
+                height: 25.06px;
+                border-radius: 4px;
+            }
+            .line5{
+                position: absolute;
+                top:100px;
+                left: 10%;
+                top:27px;
+                background:var(--color3);
+                transform: matrix(-1, 0, 0, 1, 0, 0);
+                width: 5.91px;
+                height: 46.06px;
+                border-radius: 5px;
+                transform: rotate(-45deg);
+            }
+            .line6{
+                position: absolute;
+                top:100px;
+                left: 9%;
+                top:80px;
+                background:var(--color3);
+                transform: matrix(-1, 0, 0, 1, 0, 0);
+                width: 5.91px;
+                height: 26.06px;
+                border-radius: 5px;
+                transform: rotate(-90deg);
             }
         }
         .mernan{
@@ -95,6 +163,72 @@
                     order: 1;
                     flex-grow: 0;
                     width:100%
+                }
+            }
+        }
+
+        .buttons{
+            display: flex;
+            align-items: center;
+            justify-content: flex-start;
+            padding: 10px 0px;
+            margin: 20px 0px 10px 0px;
+
+            .who_mernan{
+                background-color:var(--color3); 
+                        border: none;
+                        box-shadow: 0px 123px 49px rgba(0, 0, 0, 0.01), 0px 69px 41px rgba(0, 0, 0, 0.05), 0px 31px 31px rgba(0, 0, 0, 0.09), 0px 8px 17px rgba(0, 0, 0, 0.1), 0px 0px 0px rgba(0, 0, 0, 0.1);
+                        width: 294px;
+                        height: 79px;
+                        padding: 18px 20px;
+                        display: flex;
+                        flex-direction: row;
+                        justify-content: center;
+                        align-items: center;
+                        gap: 10px;
+                        border-radius: 10px 0px;
+                        cursor: pointer;
+                        font-family: 'Almarai';
+
+                        &.who_ar{
+                            width: 218px;
+                        }
+                    
+                        span{
+                            font-family: 'Almarai';
+                            font-style: normal;
+                            font-weight: 700;
+                            font-size: 31px;
+                            line-height: 140%;
+                            color:var(--color2);
+                            flex: none;
+                            flex-grow: 0;
+                            display: grid;
+                            place-items: center;
+                        }
+            }
+            .portfolio{
+                width: 167px;
+                height: 71px;
+                margin: 0px 40px;
+                display: flex;
+                flex-direction: row;
+                align-items: center;
+                padding: 18px 20px;
+                gap: 10px;
+                border-radius: 10px 0px;
+                font-family: 'Almarai';
+                font-style: normal;
+                font-weight: 700;
+                font-size: 31px;
+                line-height: 140%;
+                border: 3px solid var(--color4);
+                background: none;
+                color:var(--color4);
+
+                &.portfolio_ar{
+                    width: 250px;
+                    height: 79px;
                 }
             }
         }
