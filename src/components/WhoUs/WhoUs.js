@@ -12,6 +12,8 @@ import { useTranslation } from 'react-i18next';
 import { BsArrowRight } from "react-icons/bs";
 import { BsArrowLeft } from "react-icons/bs";
 
+import Hero from '../../assets/images/hero.svg';
+import Hero_ar from '../../assets/images/hero_ar.svg'
 
 const WhoUs = () => {
 
@@ -27,7 +29,7 @@ const WhoUs = () => {
                 {t("we_transfer_your_work")}
                 {" "}
                 <span>{t("world_full")}</span>
-                {
+                {/* {
                     changeSide === "en" && (
                         <div>
                         <div className="line1"></div>
@@ -35,7 +37,7 @@ const WhoUs = () => {
                         <div className="line3"></div>
                         </div>
                     )
-                }
+                }*/}
                 {
                     changeSide === "ar" && (
                         <div>
@@ -44,7 +46,7 @@ const WhoUs = () => {
                         <div className="line6"></div>
                         </div>
                     )
-                }
+                }  
             </h2>
             <p className="mernan">{t("mernan_is_a_world")}</p>
             <div className={`${changeSide === "ar" ? "active_ar" :"active_en"} statistics`}>
@@ -77,7 +79,10 @@ const WhoUs = () => {
             <button className={`${changeSide === "ar" && "portfolio_ar"} portfolio`}>{t("portfolio")}</button>
             </div>
         </div>
-        <div className="">
+        <div className={`${changeSide === "en" ? "image_en" : "image_ar"} image_`}>
+            {
+                changeSide === "en" ? <img src={Hero} alt=""/> : <img src={Hero_ar} alt=""/> 
+            }
         </div>
     </div>
   )

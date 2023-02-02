@@ -49,7 +49,7 @@ const Header = () => {
               <img src={logo} alt=""/>
           </div>
           <div className="nav">
-            <ul>
+            <ul className={`${changeSide === "en" ? "ul_en" : "ul_ar"}`}>
               <li>
                 <a href="@">{t("services")}</a>
               </li>
@@ -67,7 +67,7 @@ const Header = () => {
               </li>
               <li><SwitchLanguage EnglishLanguage={EnglishLanguage} ArabicLanguage={ArabicLanguage}/></li>
               <li>
-                <button className="work_with dd">
+                <button className="work_with">
                   <span>{t("work_with_us")}</span>
                   <span>
                     {
@@ -98,19 +98,11 @@ const SwitchLanguage = ({ArabicLanguage , EnglishLanguage})=>{
     setShowTranslate(!showTranslate )
   }
 
- 
-
-  const styles={
-    width:"29.33px",
-    height:"26.7px",
-    color:"#312E3A",
-    cursor:"pointer",
-  }
 
   return(
     <div>
         <div onClick={ShowTranslation}>
-          <span><MdTranslate  style={styles}/></span>
+          <span><MdTranslate className="translate"/></span>
         </div>
         {
           showTranslate &&

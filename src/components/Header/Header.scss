@@ -1,9 +1,11 @@
+
 :root{
     --color1:#EDE4E0;
     --color2:#312E3A;
     --color3:#FFC84D;
     --color4:#fff;
 }
+
 
 .header{
     background-color: var(--color1);
@@ -18,7 +20,7 @@
         align-items:center;
         justify-content:space-between;
         width: 100%;
-        padding: 0px 0px 0px 10px;
+        padding: 0px 20px;
 
         .nav{
             width:100%;
@@ -32,14 +34,19 @@
 
             li{
                 list-style-type:none;
-                margin: 0px 10px;
-
                 a{
                     font-size: 23px;
                     color:var(--color2);
                     line-height: 140%;
                     font-weight: 700;
                     font-style: normal;
+                }
+
+                .translate{
+                    width:29.33px;
+                    height:26.7px;
+                    color:#312E3A;
+                    cursor:pointer;
                 }
 
                 .en_ar{
@@ -93,6 +100,104 @@
                         flex-grow: 0;
                         display: grid;
                         place-items: center;
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+@media only screen and (min-width: 1500px){
+
+    .header{
+        .navbar{
+            .nav{
+                ul{
+                    &.ul_ar{
+                        padding: 0px 50px 0px 0px;
+                    }
+                    &.ul_en{
+                        padding: 0px 0px 0px 50px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media only screen and (min-width: 1700px){
+
+    .header{
+        .navbar{
+            padding: 0px 30px;
+            .nav{
+                ul{
+                    &.ul_ar{
+                        padding: 0px 80px 0px 0px;
+                    }
+                    &.ul_en{
+                        padding: 0px 0px 0px 80px;
+                    }
+                    li{
+                        a{
+                            font-size: 30px;
+                            color:var(--color2);
+                            line-height: 140%;
+                            font-weight: 700;
+                            font-style: normal;
+                        }
+                        .translate{
+                            width:39.33px;
+                            height:36.7px;
+                            color:#312E3A;
+                            cursor:pointer;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+@media only screen and (max-width: 1370px){
+    .header{
+        height: 130px;
+
+        .logo img{
+            width: 150px;
+        }
+        .navbar{
+            padding: 0px 20px;
+            .nav{
+                ul{
+                    &.ul_ar{
+                        padding: 0px 30px 0px 0px;
+                    }
+                    &.ul_en{
+                        padding: 0px 0px 0px 30px;
+                    }
+                    li{
+                        a{
+                            font-size: 18px;
+                        }
+                        .translate{
+                            width:25.33px;
+                            height:22.7px;
+                        }
+                        .work_with{
+                            width: 200px;
+                            height: 61px;
+                            padding: 15px 17px;
+                            span{
+                                font-size: 20px;
+                            }
+                        }
+                        .en_ar{
+                            position: absolute;
+                            top: 80px;
+                        }
                     }
                 }
             }
