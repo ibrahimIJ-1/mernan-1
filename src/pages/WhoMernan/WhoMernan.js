@@ -1,24 +1,25 @@
-import React from 'react';
+import React from 'react'
 
-/* import components */
+//** import components */
 import Header from '../../components/Header/Header';
 import Footer from '../../components/Footer/Footer';
-import WhoUs from '../../components/WhoUs/WhoUs';
+import Welcome from '../../components/Welcome/Welcome';
 
+const WhoMernan = () => {
 
-const Home = () => {
   return (
-    <div>
+    <div> 
         {/* Header */}
         <Header/>
 
-        {/* Who us */}
-        {/* <WhoUs/> */}
+        {/* Welcome */}
+        <Welcome/>
 
         {/* Footer */}
         <Footer/>
     </div>
+
   )
 }
 
-export default Home
+export default WhoMernan

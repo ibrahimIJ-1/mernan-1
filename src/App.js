@@ -4,15 +4,17 @@ import {BrowserRouter , Route} from 'react-router-dom';
 
 import './App.scss';
 
-/* import components  */
+//** import components  */
 import Home from './pages/Home/Home';
+import WhoMernan from './pages/WhoMernan/WhoMernan';
 
 
 const App: FC = ()=> {
   return (
     <div className="app">
         <Suspense fallback={null}>
-            <Home/>
+            {/* <Home/> */}
+            <WhoMernan/>
         </Suspense>
     </div>
   );

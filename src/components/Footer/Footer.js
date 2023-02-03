@@ -49,7 +49,7 @@ const Footer = () => {
     return (
     <div className="footer" dir={`${changeSide === "ar" ? "rtl" : "ltr"}`}>
         <div className="head">
-            <div className="image">
+            <div className="logo">
                 <img src={logo} alt=""/>
             </div>
             <div>
