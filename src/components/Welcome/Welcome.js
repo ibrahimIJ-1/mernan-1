@@ -5,6 +5,7 @@ import './Welcome.scss';
 //** import images */
 import image1 from '../../assets/images/heading1.png';
 import image2 from '../../assets/images/Highlight_05.png';
+import image3 from '../../assets/images/Highlight_ar.png';
 
 //**import icons from react-icons */
 import { BsArrowRight } from "react-icons/bs";
@@ -28,11 +29,7 @@ const Welcome = () => {
         <div className="explain">
         <h2 className={`${changeSide === "ar" && "active"}`}>
           {t("who_is_mernan,")} <span>{t("welcome")}</span>
-          {changeSide === "en" && (
-            <div>
-                <img src={image2} alt=""/>
-            </div>
-          )}
+          {changeSide === "ar" ? <img className="radiation_ar" src={image3} alt=""/> : <img className="radiation_en" src={image2} alt=""/>}
         </h2>
         <p>{t("your_access")}</p>
         <div className="know_more">
@@ -45,7 +42,7 @@ const Welcome = () => {
                 <BsArrowRight className="arrow" />
               )}
             </span>
-          </button>
+        </button>
         </div>
         </div>
         <div className="image">

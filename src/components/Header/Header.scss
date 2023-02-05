@@ -14,23 +14,23 @@
     display:flex;
     align-items:center;
     justify-content:center;
-
-    .navbar{
+    .navbar_{
         display:flex;
         align-items:center;
         justify-content:space-between;
         width: 100%;
         padding: 0px 20px;
 
-        .nav{
+        .nav_{
             width:100%;
         }
-        .nav ul{
+        .nav_ ul{
             display:flex;
             align-items:center;
             justify-content:space-between;
             width: 100%;
             padding: 0px 10px;
+            margin-top: 10px;
 
             li{
                 list-style-type:none;
@@ -40,6 +40,7 @@
                     line-height: 140%;
                     font-weight: 700;
                     font-style: normal;
+                    text-decoration: none;
                 }
 
                 .translate{
@@ -113,8 +114,8 @@
 @media only screen and (min-width: 1500px){
 
     .header{
-        .navbar{
-            .nav{
+        .navbar_{
+            .nav_{
                 ul{
                     &.ul_ar{
                         padding: 0px 50px 0px 0px;
@@ -131,9 +132,9 @@
 @media only screen and (min-width: 1700px){
 
     .header{
-        .navbar{
+        .navbar_{
             padding: 0px 30px;
-            .nav{
+            .nav_{
                 ul{
                     &.ul_ar{
                         padding: 0px 80px 0px 0px;
@@ -170,9 +171,9 @@
         .logo img{
             width: 150px;
         }
-        .navbar{
+        .navbar_{
             padding: 0px 20px;
-            .nav{
+            .nav_{
                 ul{
                     &.ul_ar{
                         padding: 0px 30px 0px 0px;
@@ -213,8 +214,8 @@
         .logo img{
             width: 140px;
         }
-        .navbar{
-            .nav{
+        .navbar_{
+            .nav_{
                 ul{
                     &.ul_ar{
                         padding: 0px 20px 0px 0px;

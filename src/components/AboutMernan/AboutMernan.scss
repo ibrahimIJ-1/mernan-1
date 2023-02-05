@@ -1,0 +1,63 @@
+:root{
+    --color1:#EDE4E0;
+    --color2:#312E3A;
+    --color3:#FFC84D;
+    --color4:#39858E;
+    --color5:#FDFDFE;
+}
+
+.about_mernan{
+    width: 100%;
+    background-color: var(--color1);
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding: 60px 20px;
+    position: relative;
+
+    .image{
+        width: 50%;
+        display: grid;
+        place-items: center;
+        img{
+            width: 90%;
+
+        }
+    }
+    .explaining{
+        width:50%;
+        h2{
+            font-family: 'Almarai';
+            font-style: normal;
+            font-weight: 700;
+            font-size: 30px;
+            line-height: 140%;
+            color: var(--color2);
+            position: absolute;
+            top:30px;
+            z-index: 10;
+            &::after{
+                content: "";
+                width: 42px;
+                height: 42px;
+                border-radius: 50%;
+                background-color: var(--color4);
+                display: block;
+                position: absolute;
+                top:0px;
+                z-index:-1;
+            }
+        }
+        p{
+            font-family: 'Almarai';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 17px;
+            line-height: 170%;
+            color: var(--color2);
+            margin: 20px 0px;
+            width: 90%;
+        }
+    }
+}

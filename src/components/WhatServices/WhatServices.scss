@@ -4,17 +4,30 @@
     --color2:#312E3A;
     --color3:#FFC84D;
     --color4:#39858E;
+    --color5:#FDFDFE;
 }
 
-.welcome{
+.what_services{
+    padding: 50px 20px 50px 0px;
     width: 100%;
-    background-color: var(--color1);
-    padding: 60px 20px;
+    background-color:var(--color4);
     display: flex;
-    align-content: center;
-    justify-content:space-between;
-    .explain{
-        width: 52%;
+    align-items: center;
+    justify-content: space-between;
+
+    &.what_services_ar{
+        padding: 50px 0px 50px 20px;
+    }
+
+    .image{
+        width: 50%;
+        margin-right: 0px;
+        img{
+            width: 442px;
+        }
+    }
+    .explaining{
+        width: 50%;
 
         h2{
             font-size: 61px;
@@ -22,20 +35,20 @@
             font-style: normal;
             font-weight: 800;
             line-height: 140%;
-            color:var(--color4);
+            color:var(--color5);
             position: relative;
             span{
-                color: var(--color2);
+                color: var(--color3);
             }
-            .radiation_en{
+            .services_en{
                 position: absolute;
-                right: -20px;
-                top: -40px;
+                top:-30px;
+                right: 0px;
             }
-            .radiation_ar{
+            .services_ar{
                 position: absolute;
-                left: -30px;
-                top: -40px;
+                top:-30px;
+                left: 25px;
             }
         }
         p{
@@ -44,11 +57,12 @@
             font-weight: 400;
             font-size: 17px;
             line-height: 170%;
-            color: var(--color2);
+            color: var(--color5);
             margin: 20px 0px;
         }
-        .know_more button{
-            width: 170px;
+
+        .browse_services button{
+            width: 200px;
             height: 51px;
             display: flex;
             flex-direction: row;
@@ -75,14 +89,6 @@
                 display: grid;
                 place-items: center;
             }
-        }
-
-    }
-    .image{
-        width: 44%;
-        img{
-            width: 420px;
-            height: 320px;
         }
     }
 }

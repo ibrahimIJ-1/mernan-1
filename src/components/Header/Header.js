@@ -44,11 +44,11 @@ const Header = () => {
 
   return (
     <div className="header" dir={`${changeSide === "ar" ? "rtl" : "ltr"}`}>
-        <div className="navbar">
+        <div className="navbar_">
           <div className="logo">
               <img src={logo} alt=""/>
           </div>
-          <div className="nav">
+          <div className="nav_">
             <ul className={`${changeSide === "ar" ? "ul_ar" : "ul_en"}`}>
               <li>
                 <a href="@">{t("services")}</a>

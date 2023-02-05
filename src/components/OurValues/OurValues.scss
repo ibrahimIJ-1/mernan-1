@@ -1,0 +1,69 @@
+:root{
+    --color1:#EDE4E0;
+    --color2:#312E3A;
+    --color3:#FFC84D;
+    --color4:#39858E;
+    --color5:#FDFDFE;
+}
+
+
+.our_value{
+    background-color: var(--color1);
+    padding: 50px 0px;
+    position:relative;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+
+    .head_en{
+        font-family: 'Almarai';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 30px;
+        line-height: 140%;
+        color: var(--color2);
+        position: absolute;
+        top:0px;
+        z-index: 10;
+        left:0px;
+        
+        &::after{
+            content: "";
+            width: 42px;
+            height: 42px;
+            border-radius: 50%;
+            background-color: var(--color4);
+            display: block;
+            position: absolute;
+            top:0px;
+            z-index:-1;
+        }
+    }
+        .head_ar{
+            font-family: 'Almarai';
+            font-style: normal;
+            font-weight: 700;
+            font-size: 30px;
+            line-height: 140%;
+            color: var(--color2);
+            position: absolute;
+            top:0px;
+            z-index: 10;
+            right:0px;
+            
+            &::after{
+                content: "";
+                width: 42px;
+                height: 42px;
+                border-radius: 50%;
+                background-color: var(--color4);
+                display: block;
+                position: absolute;
+                top:0px;
+                z-index:-1;
+            }
+    }
+    .cards{
+        margin-top:30px;
+    }
+}

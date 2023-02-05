@@ -1,3 +1,14 @@
+
+:root{
+  --color1:#EDE4E0;
+  --color2:#312E3A;
+  --color3:#FFC84D;
+  --color4:#39858E;
+  --color5:#FDFDFE;
+  --color6:#596773;
+}
+
+
 body {
   margin: 0;
   font-family: 'Almarai', sans-serif;
@@ -5,6 +16,7 @@ body {
   flex-direction: column;
   min-height: 100vh;
   overflow-x: hidden;
+  background:#EDE4E0
 }
 
 *{
