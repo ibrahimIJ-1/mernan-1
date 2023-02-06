@@ -60,8 +60,19 @@
   "headquarters_place": "Headquarters place",
   "telephone": "Telephone",
   "building_number": "Building Number",
-  "our_location":"Our Locations",
+  "our_location": "Our Locations",
   "cairo_egypt": "Cairo - Egypt",
   "dubai_uae": "Dubai - UAE",
-  "jeddah_ksa": "Jeddah - KSA"
+  "jeddah_ksa": "Jeddah - KSA",
+  "first_name": "First Name",
+  "last_name": "Last Name",
+  "mobile_number": "Mobile Number",
+  "email": "Email",
+  "field": "Field",
+  "company_name": "Company Name",
+  "budget": "Budget",
+  "message": "Message",
+  "send_message":"Send Message",
+  "digital_marketing":"Digital Marketing",
+  "amount":"50000 - 100000 SR"
 }

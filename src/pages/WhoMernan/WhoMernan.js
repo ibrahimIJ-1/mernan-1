@@ -51,7 +51,7 @@ const WhoMernan = () => {
         <RequestFreeConsulting/>
         
         {/* Footer */}
-        <Footer/>
+        <Footer color1={"#39858E"} color2={"#FDFDFE"}/>
     </div>
 
   )

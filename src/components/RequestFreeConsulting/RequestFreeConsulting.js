@@ -19,15 +19,15 @@ const RequestFreeConsulting = () => {
   const { t } = useTranslation();
 
   return (
-    <div className="request">
+    <div className={`${changeSide === 'ar' ? "request_ar" : "request_en"} request`} dir={`${changeSide === "ar" ? "rtl" : "ltr"}`}>
       <h2>{t("request_free_consulting")}</h2>
       <div className="body">
         <div className="section">
           <form>
-            <div className="div1">
-              <div className="mb-3 me-3">
+            <div className="div1 row">
+              <div className="mb-3 col">
                 <label for="exampleFormControlInput1" class="form-label">
-                  First Name
+                  {t("first_name")}
                 </label>
                 <input
                   type="text"
@@ -35,9 +35,9 @@ const RequestFreeConsulting = () => {
                   id="exampleFormControlInput1"
                 />
               </div>
-              <div className="mb-3 ms-3">
+              <div className="mb-3 col">
                 <label for="exampleFormControlInput1" class="form-label">
-                  Last Name
+                {t("last_name")}
                 </label>
                 <input
                   type="text"
@@ -46,10 +46,10 @@ const RequestFreeConsulting = () => {
                 />
               </div>
             </div>
-            <div className="div1 mt-3">
-              <div class="mb-3 me-3">
+            <div className="div1 mt-2 row">
+              <div class="mb-3 col">
                 <label for="exampleFormControlInput1" class="form-label">
-                  Mobile Number
+                  {t("mobile_number")}
                 </label>
                 <input
                   type="number"
@@ -57,9 +57,9 @@ const RequestFreeConsulting = () => {
                   id="exampleFormControlInput1"
                 />
               </div>
-              <div class="mb-3 ms-3">
+              <div class="mb-3 col">
                 <label for="exampleFormControlInput1" class="form-label">
-                  Email address
+                  {t("email")}
                 </label>
                 <input
                   type="email"
@@ -68,34 +68,34 @@ const RequestFreeConsulting = () => {
                 />
               </div>
             </div>
-            <div>
+            <div className="mt-2">
               <label for="inputState" class="form-label">
-                Field
+                {t("field")}
               </label>
               <select id="inputState" class="form-select">
-                <option selected>Choose...</option>
+                <option selected>{t("digital_marketing")}</option>
                 <option>...</option>
               </select>
             </div>
             <div className="mt-4">
               <label for="inputAddress" class="form-label">
-                Company Name
+                {t("company_name")}
               </label>
               <input type="text" class="form-control" id="inputAddress" />
             </div>
 
             <div className="mt-4">
               <label for="inputState" class="form-label">
-                Budget
+                {t("budget")}
               </label>
               <select id="inputState" class="form-select">
-                <option selected>50000 - 100000 SR</option>
+                <option selected>{t("amount")}</option>
                 <option>...</option>
               </select>
             </div>
             <div class="mt-4">
               <label for="exampleFormControlTextarea1" class="form-label">
-                Example textarea
+                {t("message")}
               </label>
               <textarea
                 class="form-control"
@@ -104,12 +104,12 @@ const RequestFreeConsulting = () => {
               ></textarea>
             </div>
             <div className="mt-4">
-              <Button name={"Send Message"} />
+              <Button name={"send_message"} />
             </div>
           </form>
         </div>
         <div className="image">
-          <img src={image1} alt="" />
+          {changeSide === "ar" ? <img src={image2} alt="" /> : <img src={image1} alt="" />}
         </div>
       </div>
     </div>

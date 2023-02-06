@@ -6,15 +6,15 @@ import './Welcome.scss';
 import image1 from '../../assets/images/heading1.png';
 import image2 from '../../assets/images/Highlight_05.png';
 import image3 from '../../assets/images/Highlight_ar.png';
-
-//**import icons from react-icons */
-import { BsArrowRight } from "react-icons/bs";
-import { BsArrowLeft } from "react-icons/bs";
+import image4 from '../../assets/images/share.png';
 
 //** state management */
 import { StateContext } from "../StateProvider";
 
 import { useTranslation } from "react-i18next";
+
+//** import components */
+import Button from '../Button/Button';
 
 
 const Welcome = () => {
@@ -32,18 +32,8 @@ const Welcome = () => {
           {changeSide === "ar" ? <img className="radiation_ar" src={image3} alt=""/> : <img className="radiation_en" src={image2} alt=""/>}
         </h2>
         <p>{t("your_access")}</p>
-        <div className="know_more">
-        <button className={`${changeSide === "ar" && "know_ar"}`}>
-            <span>{t("know_more")}</span>
-            <span>
-              {changeSide === "ar" ? (
-                <BsArrowLeft className="arrow" />
-              ) : (
-                <BsArrowRight className="arrow" />
-              )}
-            </span>
-        </button>
-        </div>
+        <Button name={"know_more"}/>
+        <img className="share" src={image4} alt=""/>
         </div>
         <div className="image">
           <img src={image1} alt=""/>

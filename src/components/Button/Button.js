@@ -11,19 +11,15 @@ import { StateContext } from "../StateProvider";
 
 import { useTranslation } from "react-i18next";
 
-const Button = ({width , name}) => {
+const Button = ({name}) => {
   //** this is state to change side rtl and ltr */
   const { changeSide } = useContext(StateContext);
 
   const { t } = useTranslation();
 
-  const styles ={
-    width:`${width}px`
-  }
-
   return (
     <div className="button_component">
-      <button style={styles}>
+      <button>
         <span>{t(`${name}`)}</span>
         <span>
           {changeSide === "ar" ? (

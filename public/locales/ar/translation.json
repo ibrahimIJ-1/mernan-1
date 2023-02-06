@@ -63,5 +63,16 @@
   "our_location":"مواقعنا",
   "cairo_egypt": "جدة - المملكة العربية السعودية",
   "dubai_uae": "دبي - الإمارات العربية المتحدة",
-  "jeddah_ksa": "القاهرة - مصر"
+  "jeddah_ksa": "القاهرة - مصر",
+  "first_name": "الأسم الأول",
+  "last_name": "الأسم الأخير",
+  "mobile_number": "رقم الهاتف",
+  "email": "الأيميل",
+  "field": "المجال",
+  "company_name": "اسم الشركة",
+  "budget": "الميزانية",
+  "message": "الرسالة",
+  "send_message":"إرسال الرسالة",
+  "digital_marketing": "تسويق إلكتروني",
+  "amount":"50000 - 100000 ر.س"
 }
