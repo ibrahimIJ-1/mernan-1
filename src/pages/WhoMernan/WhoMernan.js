@@ -10,6 +10,9 @@ import JoinUs from '../../components/JoinUs/JoinUs';
 import AboutMernan from '../../components/AboutMernan/AboutMernan';
 import OurValues from '../../components/OurValues/OurValues';
 import OurPartners from '../../components/OurPartners/OurPartners';
+import PreviousClients from '../../components/PreviousClients/PreviousClients';
+import OurLocations from '../../components/OurLocations/OurLocations';
+import RequestFreeConsulting from '../../components/RequestFreeConsulting/RequestFreeConsulting';
 
 const WhoMernan = () => {
 
@@ -38,6 +41,14 @@ const WhoMernan = () => {
 
         {/* Our Partners */}
         <OurPartners/>
+
+        {/*Previous Clients*/}
+        <PreviousClients/>
+
+        {/*Our Locations*/}
+        <OurLocations/>
+
+        <RequestFreeConsulting/>
         
         {/* Footer */}
         <Footer/>
