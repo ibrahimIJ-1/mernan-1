@@ -1,14 +1,14 @@
 
 
 .portfolio{
-    padding: 50px 10px;
+    padding: 50px 20px;
     position: relative;
 
     h2{
         font-family: 'Almarai';
         font-style: normal;
         font-weight: 700;
-        font-size: 30px;
+        font-size: 40px;
         line-height: 140%;
         color: var(--color2);
         position: absolute;
@@ -17,8 +17,8 @@
         
         &::after{
             content: "";
-            width: 42px;
-            height: 42px;
+            width: 52px;
+            height: 52px;
             border-radius: 50%;
             background-color: var(--color4);
             display: block;

@@ -6,6 +6,9 @@ import Footer from '../../components/Footer/Footer';
 import WhoUs from '../../components/WhoUs/WhoUs';
 import Portfolio from '../../components/Portfolio/Portfolio';
 import OurServices from '../../components/OurServices/OurServices';
+import WhatMakesDifference from '../../components/WhatMakesDifference/WhatMakesDifference';
+import PreviousClients from '../../components/PreviousClients/PreviousClients';
+import OurWayOfWork from '../../components/OurWayOfWork/OurWayOfWork';
 
 //** import images */
 import logo from '../../assets/images/mernan.png';
@@ -24,6 +27,15 @@ const LandingPage = () => {
 
         {/* Our Services */}
         <OurServices/>
+        
+        {/* What makes difference */}
+        <WhatMakesDifference/>
+
+        {/* Previous Clients */}
+        <PreviousClients/>
+
+        {/* our we of work */}
+        <OurWayOfWork/>
         
         {/* Footer */}
         <Footer image={logo} color1={"#EDE4E0"} color2={"#312E3A"}/>

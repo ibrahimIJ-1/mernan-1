@@ -56,7 +56,7 @@ const PreviousClients = () => {
       
       <div className="cards">
       <Swiper
-        slidesPerView={2}
+        slidesPerView={3}
         spaceBetween={30}
         centeredSlides={true}
         autoplay={{
