@@ -7,6 +7,7 @@ import './App.scss';
 //** import components  */
 import Home from './pages/Home/Home';
 import WhoMernan from './pages/WhoMernan/WhoMernan';
+import LandingPage from './pages/LandingPage/LandingPage';
 
 
 const App: FC = ()=> {
@@ -14,7 +15,8 @@ const App: FC = ()=> {
     <div className="app">
         <Suspense fallback={null}>
             {/* <Home/> */}
-            <WhoMernan/>
+            {/* <WhoMernan/> */}
+            <LandingPage/>
         </Suspense>
     </div>
   );

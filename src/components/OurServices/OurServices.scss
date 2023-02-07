@@ -1,0 +1,39 @@
+
+.our_services{
+    padding: 50px 20px;
+    width:100%;
+    position: relative;
+
+    h2{
+        font-family: 'Almarai';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 30px;
+        line-height: 140%;
+        color: var(--color2);
+        position: absolute;
+        top:30px;
+        z-index: 10;
+        
+        &::after{
+            content: "";
+            width: 42px;
+            height: 42px;
+            border-radius: 50%;
+            background-color: var(--color4);
+            display: block;
+            position: absolute;
+            top:0px;
+            z-index:-1;
+        }
+    }
+    .cards{
+        margin-top: 50px;
+        width: 100%;
+        .row{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+    }
+}

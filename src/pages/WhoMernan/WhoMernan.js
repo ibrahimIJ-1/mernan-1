@@ -14,6 +14,9 @@ import PreviousClients from '../../components/PreviousClients/PreviousClients';
 import OurLocations from '../../components/OurLocations/OurLocations';
 import RequestFreeConsulting from '../../components/RequestFreeConsulting/RequestFreeConsulting';
 
+//** import logo */
+import logo from '../../assets/images/mernan_white.png';
+
 const WhoMernan = () => {
 
   return (
@@ -51,7 +54,7 @@ const WhoMernan = () => {
         <RequestFreeConsulting/>
         
         {/* Footer */}
-        <Footer color1={"#39858E"} color2={"#FDFDFE"}/>
+        <Footer color1={"#39858E"} color2={"#FDFDFE"} image={logo}/>
     </div>
 
   )

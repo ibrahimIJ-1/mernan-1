@@ -6,8 +6,6 @@ import {StateContext} from '../StateProvider';
 //** import file scss*/
 import './Footer.scss';
 
-//** import logo */
-import logo from '../../assets/images/mernan.png';
 
 //** translation  */
 import { useTranslation } from 'react-i18next';
@@ -26,7 +24,7 @@ import { FaBehance } from "react-icons/fa";
 import { AiFillInstagram } from "react-icons/ai";
 
 
-const Footer = ({color1 , color2}) => {
+const Footer = ({color1 , color2 , image}) => {
 
     //** this is state to change side rtl and ltr */
     const { changeSide  , setChangeSide } = useContext(StateContext)
@@ -61,7 +59,7 @@ const Footer = ({color1 , color2}) => {
     <div className="footer" style={styles.style1} dir={`${changeSide === "ar" ? "rtl" : "ltr"}`}>
         <div className="head">
             <div className="logo">
-                <img src={logo} alt=""/>
+                <img src={image} alt=""/>
             </div>
             <div>
             <button className="work_with">

@@ -1,0 +1,106 @@
+
+
+.card_service{
+    width: 392px;
+    height: 524px;
+    background-color:var(--color5);
+    box-shadow: 0px 31px 31px rgba(0, 0, 0, 0.09), 0px 0px 0px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    position: relative;
+    padding: 0px 20px 0px 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+
+    .title{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        margin-bottom:10px;
+
+        h3{
+            font-family: 'Almarai';
+            font-style: normal;
+            font-weight: 700;
+            font-size: 27px;
+            line-height: 140%;
+            color:var(--color2)            
+        }
+    }
+
+    .service{
+        position: absolute;
+        left: 0px;
+        top:0px;
+        width: 123px;
+        height: 133px;
+        border-radius:10px 0px 0px 0px;
+    }
+    .body{
+        display: flex;
+        flex-direction: column;
+        align-items:flex-start;
+        justify-content: center;
+        div{
+        display: flex;
+        flex-direction: row;
+        align-items:center;
+        justify-content:center;
+        margin-top:20px;
+        p{
+            margin:0px 0px 0px 20px;
+            color:var(--color2);  
+            text-align:left;
+            line-height:140%;
+            font-size:17px;
+            font-weight:400;
+
+            &.service_ar{
+                margin:0px 20px 0px 0px;
+                text-align:right;
+            }
+        }
+        }
+        .button_service{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        width:100%;
+        position:absolute;
+        bottom:25px;
+        left:50%;
+        transform: translate(-50%);
+            button{
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content:center;
+            padding: 15px 17px;
+            gap: 10px;
+            width: 220px;
+            height: 61px;
+            box-shadow: 0px 31px 31px rgba(0, 0, 0, 0.09), 0px 0px 0px rgba(0, 0, 0, 0.1);
+            border-radius: 10px 0px;
+            background:var(--color2);
+            border:none;
+            span{
+                font-family: 'Almarai';
+                font-style: normal;
+                font-weight: 700;
+                font-size: 22px;
+                line-height: 140%;
+                flex: none;
+                order: 0;
+                flex-grow: 0;   
+                color:var(--color5);             
+            }
+            }
+        }
+    }
+}
