@@ -34,3 +34,63 @@
         place-items: center;
     }
 }
+
+@media only screen and (min-width:1250px){
+    .button_component{
+        button{
+            height: 61px;
+            span{
+                font-size: 25px;
+                line-height: 140%;
+                font-weight: 700;
+                font-family: 'Almarai';
+                font-style: normal;
+                color:var(--color2);
+                flex: none;
+                flex-grow: 0;
+                display: grid;
+                place-items: center;
+            }
+        }
+    }
+}
+
+@media only screen and (min-width:1700px){
+    .button_component{
+        button{
+            height: 71px;
+            span{
+                font-size: 30px;
+                line-height: 140%;
+                font-weight: 700;
+                font-family: 'Almarai';
+                font-style: normal;
+                color:var(--color2);
+                flex: none;
+                flex-grow: 0;
+                display: grid;
+                place-items: center;
+            }
+        }
+    }
+}
+
+@media only screen and (min-width:1900px){
+    .button_component{
+        button{
+            height: 81px;
+            span{
+                font-size: 35px;
+                line-height: 140%;
+                font-weight: 700;
+                font-family: 'Almarai';
+                font-style: normal;
+                color:var(--color2);
+                flex: none;
+                flex-grow: 0;
+                display: grid;
+                place-items: center;
+            }
+        }
+    }
+}

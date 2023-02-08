@@ -13,6 +13,14 @@
     align-items: center;
     justify-content: center;
     text-align: center;
+    pointer-events: none;
+    transition:all 1s ease;
+
+    &:hover{
+        background:#16a8a3;
+        color:#fff;
+    }
+
 
     .title{
         display: flex;
@@ -28,7 +36,7 @@
             font-weight: 700;
             font-size: 27px;
             line-height: 140%;
-            color:var(--color2)            
+            color:var(--color2);   
         }
     }
 
@@ -39,6 +47,7 @@
         width: 123px;
         height: 133px;
         border-radius:10px 0px 0px 0px;
+        pointer-events: auto;
     }
     .body{
         display: flex;

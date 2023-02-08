@@ -33,7 +33,6 @@ const Welcome = () => {
         </h2>
         <p>{t("your_access")}</p>
         <Button name={"know_more"}/>
-        <img className="share" src={image4} alt=""/>
         </div>
         <div className="image">
           <img src={image1} alt=""/>
