@@ -11,6 +11,8 @@ import PreviousClients from '../../components/PreviousClients/PreviousClients';
 import OurWayOfWork from '../../components/OurWayOfWork/OurWayOfWork';
 import RequestFreeConsulting from '../../components/RequestFreeConsulting/RequestFreeConsulting';
 import FrequentlyAskedQuestions from '../../components/FrequentlyAskedQuestions/FrequentlyAskedQuestions'
+import OurPartners from '../../components/OurPartners/OurPartners';
+import Subscribe from '../../components/Subscribe/Subscribe';
 
 //** import images */
 import logo from '../../assets/images/mernan.png';
@@ -44,6 +46,12 @@ const LandingPage = () => {
 
         {/* frequently asked questions */}
         <FrequentlyAskedQuestions/>
+
+        {/* our partners */}
+        <OurPartners color1={"#EDE4E0"} color2={"#312E3A"}/>
+
+        {/* Subscribe */}
+        <Subscribe/>
         
         {/* Footer */}
         <Footer image={logo} color1={"#EDE4E0"} color2={"#312E3A"}/>

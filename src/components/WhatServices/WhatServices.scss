@@ -23,9 +23,9 @@
 
     .image{
         width: 50%;
-        margin-right: 0px;
         img{
-            width: 442px;
+            width:90%;
+            height:90%;
         }
     }
     .explaining{
@@ -60,6 +60,119 @@
             line-height: 170%;
             color: var(--color5);
             margin: 20px 0px;
+        }
+    }
+}
+
+@media only screen and (min-width:1200px){
+    .what_services{
+        .explaining{
+            h2{
+                font-size: 71px;
+                span{
+                    color: var(--color3);
+                }
+                .services_en{
+                    position: absolute;
+                    top:-40px;
+                    right: 0px;
+                }
+                .services_ar{
+                    position: absolute;
+                    top:-30px;
+                    left: 50px;
+                }
+            }
+            p{
+                font-size: 20px;
+            }
+        }
+    }
+}
+
+@media only screen and (min-width:1250px){
+    .what_services{
+        .explaining{
+            h2{
+                font-size: 81px;
+                span{
+                    color: var(--color3);
+                }
+                .services_en{
+                    position: absolute;
+                    top:-40px;
+                    right: 20px;
+                }
+                .services_ar{
+                    position: absolute;
+                    top:-30px;
+                    left: 50px;
+                }
+            }
+            p{
+                font-size: 25px;
+            }
+        }
+    }
+}
+
+@media only screen and (min-width:1700px){
+    .what_services{
+        .explaining{
+            h2{
+                font-size: 91px;
+                span{
+                    color: var(--color3);
+                }
+                .services_en{
+                    position: absolute;
+                    top:-40px;
+                    right: 20px;
+                }
+                .services_ar{
+                    position: absolute;
+                    top:-30px;
+                    left: 50px;
+                }
+            }
+            p{
+                font-size: 30px;
+            }
+        }
+        .image{
+            width: 50%;
+            margin-top: 20px;
+            img{
+                width:80%;
+                height:80%;
+            }
+        }
+    }
+}
+
+
+@media only screen and (min-width:1900px){
+    .what_services{
+        .explaining{
+            h2{
+                font-size: 105px;
+                span{
+                    color: var(--color3);
+                }
+                .services_en{
+                    position: absolute;
+                    top:-40px;
+                    right: 40px;
+                }
+                .services_ar{
+                    position: absolute;
+                    top:0px;
+                    left: 50px;
+                }
+            }
+            p{
+                font-size: 35px;
+            }
         }
     }
 }

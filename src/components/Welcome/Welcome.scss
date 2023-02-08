@@ -107,28 +107,10 @@
                 font-family: 'Almarai';
                 font-style: normal;
                 font-weight: 400;
-                font-size: 20x;
+                font-size: 20px;
                 line-height: 170%;
                 color: var(--color2);
                 margin: 20px 0px;
-            }
-        }
-    }
-}
-@media only screen and (min-width:1250px){
-    .welcome{
-        .explain{
-            h2{
-            .radiation_en{
-                position: absolute;
-                right: 50px;
-                top: -40px;
-            }
-            .radiation_ar{
-                position: absolute;
-                left: -30px;
-                top: -40px;
-            }
             }
         }
     }
@@ -229,11 +211,11 @@
     .welcome{
         .explain{
             h2{
-                font-size: 98px;
+                font-size: 105px;
             .radiation_en{
                 position: absolute;
-                right: 150px;
-                top: -40px;
+                right: 200px;
+                top: -30px;
             }
             .radiation_ar{
                 position: absolute;

@@ -9,7 +9,7 @@ const Card = ({image1 , image2, title , text}) => {
   const { t } = useTranslation();
 
   return (
-    <div className="card_ mx-2 col">
+    <div className="card_ col">
         <img className="image1" src={image1} alt=""/>
         <div className="part2">
           <h3>{t(`${title}`)}</h3>

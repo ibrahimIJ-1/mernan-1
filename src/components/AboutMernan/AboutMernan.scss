@@ -61,3 +61,93 @@
         }
     }
 }
+
+@media only screen and (min-width:1200px){
+    .about_mernan{
+        .explaining{
+            h2{
+                font-size: 40px;
+                &::after{
+                    content: "";
+                    width: 52px;
+                    height: 52px;
+                }
+            }
+            p{
+                font-size: 20px;
+            }
+        }
+    }
+}
+
+@media only screen and (min-width:1300px){
+    .about_mernan{
+        .explaining{
+            h2{
+                font-size: 40px;
+                &::after{
+                    content: "";
+                    width: 52px;
+                    height: 52px;
+                }
+            }
+            p{
+                font-size: 25px;
+            }
+        }
+    }
+}
+
+@media only screen and (min-width:1400px){
+    .about_mernan{
+        .explaining{
+            h2{
+                font-size: 49px;
+                &::after{
+                    content: "";
+                    width: 62px;
+                    height: 62px;
+                }
+            }
+            p{
+                font-size: 25px;
+            }
+        }
+    }
+}
+
+@media only screen and (min-width:1700px){
+    .about_mernan{
+        .explaining{
+            h2{
+                font-size: 49px;
+                &::after{
+                    content: "";
+                    width: 62px;
+                    height: 62px;
+                }
+            }
+            p{
+                font-size: 30px;
+            }
+        }
+    }
+}
+
+@media only screen and (min-width:1900px){
+    .about_mernan{
+        .explaining{
+            h2{
+                font-size: 59px;
+                &::after{
+                    content: "";
+                    width: 72px;
+                    height: 72px;
+                }
+            }
+            p{
+                font-size: 35px;
+            }
+        }
+    }
+}

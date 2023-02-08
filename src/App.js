@@ -15,8 +15,8 @@ const App: FC = ()=> {
     <div className="app">
         <Suspense fallback={null}>
             {/* <Home/> */}
-            <WhoMernan/>
-            {/* <LandingPage/> */}
+            {/* <WhoMernan/> */}
+            <LandingPage/>
         </Suspense>
     </div>
   );

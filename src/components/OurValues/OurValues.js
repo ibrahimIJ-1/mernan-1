@@ -5,7 +5,7 @@ import './OurValues.scss';
 
 
 //** import components  */
-import Card from '../../components/Card/Card';
+import Card from './Card/Card';
 
 //** import images */
 import image1 from '../../assets/images/flexibilty.png';
@@ -33,13 +33,15 @@ const OurValues = () => {
 
     
   return (
-    <div className="our_value container text-center" dir={`${changeSide === "ar" ? "rtl" : "ltr"}`}>
+    <div className="our_value" dir={`${changeSide === "ar" ? "rtl" : "ltr"}`}>
         <h2 className={changeSide === "ar" ? "head_ar" :"head_en"}>{t("our_values")}</h2>
-        <div className="cards row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-lg-4">
+        <div className="text-center">
+        <div className="cards row row-cols-1 row-cols-sm-2 row-cols-md-3  row-cols-xl-4">
             <Card image1={image1} image2={image5} title={"flexibility"} text={"we_are_able"}/>
             <Card image1={image2} image2={image6} title={"giving"} text={"we_do_everything"}/>
             <Card image1={image3} image2={image7} title={"uniqueness_and_distinction"} text={"we_create"}/>
             <Card image1={image4} image2={image8} title={"credibility_and_transparency"} text={"communicate"}/>
+        </div>
         </div>
     </div>
   )
