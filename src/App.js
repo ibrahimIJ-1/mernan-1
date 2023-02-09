@@ -1,23 +1,23 @@
-import React, { FC,Suspense } from 'react';
+import React from 'react';
 
-import {BrowserRouter , Route} from 'react-router-dom';
+import {BrowserRouter , Routes , Route} from 'react-router-dom';
 
 import './App.scss';
 
 //** import components  */
-import Home from './pages/Home/Home';
 import WhoMernan from './pages/WhoMernan/WhoMernan';
 import LandingPage from './pages/LandingPage/LandingPage';
 
 
-const App: FC = ()=> {
+const App= ()=> {
   return (
     <div className="app">
-        <Suspense fallback={null}>
-            {/* <Home/> */}
-            <WhoMernan/>
-            {/* <LandingPage/> */}
-        </Suspense>
+            <BrowserRouter>
+              <Routes>
+                <Route path="/" element={<LandingPage/>}/>
+                <Route path="/mernan" element={<WhoMernan/>}/>
+              </Routes>
+            </BrowserRouter>
     </div>
   );
 }

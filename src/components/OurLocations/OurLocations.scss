@@ -131,6 +131,14 @@
                     height: 380px;
                 }
                 .text{
+
+                &.text_en{
+                    margin-left: 50px;
+                }
+
+                &.text_ar{
+                    margin-right: 50px;
+                }
                     p{
                         font-size: 25px;
                         span{
@@ -261,29 +269,29 @@
 @media only screen and (min-width:1900px){
     .our_locations{
         h2{
-            font-size: 49px;
+            font-size: 59px;
 
             &::after{
                 content: "";
-                width: 62px;
-                height: 62px;
+                width: 72px;
+                height: 72px;
             }
         }
         .locations{
-            margin-top: 80px;
+            margin-top: 100px;
             .location{
                 position: relative;
                 img{
-                    width: 500px;
-                    height: 500px;
+                    width: 520px;
+                    height: 520px;
                 }
                 .text{
                     &.text_en{
-                        margin-left: 70px;
+                        margin-left: 80px;
                     }
     
                     &.text_ar{
-                        margin-right: 70px;
+                        margin-right: 80px;
                     }
                     p{
                         font-size: 35px;
