@@ -37,3 +37,73 @@
         margin-top: 50px;
     }
 }
+
+@media only screen and (min-width:1200px){
+    .previous_clients{
+        h2{
+            font-size: 40px;
+            &::after{
+                content: "";
+                width: 52px;
+                height: 52px;
+            }
+        }
+    }
+}
+
+@media only screen and (min-width:1350px){
+    .previous_clients{
+        h2{
+            font-size: 40px;
+            &::after{
+                content: "";
+                width: 52px;
+                height: 52px;
+            }
+        }
+        .mySwiper{
+            margin-top: 80px;
+            img{
+                width: 150px;
+            }
+        }
+    }
+}
+
+@media only screen and (min-width:1500px){
+    .previous_clients{
+        h2{
+            font-size: 49px;
+            &::after{
+                content: "";
+                width: 62px;
+                height: 62px;
+            }
+        }
+        .mySwiper{
+            margin-top: 90px;
+            img{
+                width: 180px;
+            }
+        }
+    }
+}
+
+@media only screen and (min-width:1900px){
+    .previous_clients{
+        h2{
+            font-size: 59px;
+            &::after{
+                content: "";
+                width: 62px;
+                height: 62px;
+            }
+        }
+        .mySwiper{
+            margin-top: 100px;
+            img{
+                width: 220px;
+            }
+        }
+    }
+}

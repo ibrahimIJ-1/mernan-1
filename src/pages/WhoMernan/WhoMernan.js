@@ -43,7 +43,7 @@ const WhoMernan = () => {
         <OurValues/>
 
         {/* Our Partners */}
-        <OurPartners/>
+        <OurPartners color1={"#596773"} color2={"#FDFDFE"}/>
 
         {/*Previous Clients*/}
         <PreviousClients/>

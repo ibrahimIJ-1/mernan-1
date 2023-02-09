@@ -36,7 +36,7 @@ const OurPartners = ({color1 , color2}) => {
   return (
     <div style={style.style1} className="our_partners" dir={`${changeSide === "ar" ? "rtl" : "ltr"}`}>
       <h2 style={style.style2}>{t("our_partners")}</h2>
-      <div className="container">
+      <div className="container_">
         <div className="row  row-cols-2 row-cols-sm-3 row-cols-md-4 row-cols-lg-5">
         <img className="col" src={image1} alt=""  height="54px"/>
         <img className="col" src={image2} alt=""  height="71px"/>

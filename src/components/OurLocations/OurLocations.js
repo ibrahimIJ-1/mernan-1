@@ -38,13 +38,13 @@ const OurLocations = () => {
   return (
     <div className="our_locations" dir={`${changeSide === "ar" ? "rtl" : "ltr"}`}>
       <h2>{t("our_location")}</h2>
-      <div className="container">
+      <div className="">
       <div className="locations row text-center">
         {
             list && list.map((item)=>(
                 <div kay={item} className="location my-2 col-lg-4">
                     <img src={image} alt=""/>
-                    <div className="text">
+                    <div className={`${changeSide === "ar" ? "text_ar" : "text_en"} text`}>
                       <p>{t("headquarters_place")}{": "}<span>{t(item.headquarters_place)}</span></p>
                       <p>{t("telephone")}{": "}<span>{t(item.telephone)}</span></p>
                       <p>{t("building_number")}{": "}<span>{t(item.building_number)}</span></p>
