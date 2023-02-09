@@ -13,6 +13,7 @@ import RequestFreeConsulting from '../../components/RequestFreeConsulting/Reques
 import FrequentlyAskedQuestions from '../../components/FrequentlyAskedQuestions/FrequentlyAskedQuestions'
 import OurPartners from '../../components/OurPartners/OurPartners';
 import Subscribe from '../../components/Subscribe/Subscribe';
+import LatestArticles  from '../../components/LatestArticles/LatestArticles';
 
 //** import images */
 import logo from '../../assets/images/mernan.png';
@@ -43,6 +44,9 @@ const LandingPage = () => {
 
         {/*Request free consulting*/}
         <RequestFreeConsulting/>
+
+        {/* LatestArticles */}
+        <LatestArticles/>
 
         {/* frequently asked questions */}
         <FrequentlyAskedQuestions/>

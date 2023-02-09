@@ -2,6 +2,8 @@
     padding: 50px 20px;
     background-color: var(--color6);
     width: 100%;
+    position:relative;
+    height:350px;
 
     .part1{
         display: flex;
@@ -31,6 +33,80 @@
                     z-index:-1;                 
                 }
             }
+        }
+    }
+    
+    .part2{
+        display:flex;
+        align-items:center;
+        justify-content:flex-start;
+
+        &.part2_en{
+            .form-control{
+                // margin-left:40px;
+                left:20%;
+            }
+            .search button{
+                right:-220px;
+            }
+        }
+        &.part2_ar{
+            .form-control{
+                right:15%;
+            }
+            .search button{
+                left:-180px;
+            }
+        }
+
+        .image{
+            position:absolute;
+            left:20px;
+            bottom:20px;
+
+            img{
+                width: 213.59px;
+                height: 261.04px;
+            }
+        }
+
+        .form-control{
+            width: 822px;
+            height: 89px;
+            position:relative;
+            top:40px;
+            background-color:var(--color5);
+            font-size:22px;
+            color:var(--color2);
+            box-shadow: 0px 31px 31px rgba(0, 0, 0, 0.09), 0px 0px 0px rgba(0, 0, 0, 0.1);
+            border-radius: 10px;
+        }
+        
+        .form-control:focus{
+            background-color:var(--color5);
+            box-shadow:none;
+            border:none;
+            color:var(--color2);
+        }
+        .search button{
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content:center;
+            padding: 18px 20px;
+            gap: 10px;            
+            top:50px;
+            width: 259px;
+            height: 69px;
+            font-family: 'Almarai';
+            font-style: normal;
+            font-weight: 700;
+            font-size: 25px;
+            line-height: 140%;
+            box-shadow: 0px 123px 49px rgba(0, 0, 0, 0.01), 0px 69px 41px rgba(0, 0, 0, 0.05), 0px 31px 31px rgba(0, 0, 0, 0.09), 0px 8px 17px rgba(0, 0, 0, 0.1), 0px 0px 0px rgba(0, 0, 0, 0.1);
+            border-radius: 10px 0px;
+            background:var(--color4);
+            border:none;
         }
     }
 
