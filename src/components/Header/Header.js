@@ -3,20 +3,22 @@ import React , {useContext , useState} from 'react';
 //** state management */
 import {StateContext} from '../StateProvider';
 
-/* import translation */
+//** import translation */
 import { useTranslation } from 'react-i18next';
 import i18next from 'i18next';
 
-/* import file scss */
+//**  import file scss */
 import './Header.scss'
 
-/* import logo */
+//** import logo */
 import logo from '../../assets/images/mernan.png';
 
 //**import icons from react-icons */
 import { MdTranslate } from "react-icons/md";
 import { BsArrowRight } from "react-icons/bs";
 import { BsArrowLeft } from "react-icons/bs";
+
+import {Link} from 'react-router-dom';
 
 
 
@@ -51,7 +53,7 @@ const Header = () => {
           <div className="nav_">
             <ul className={`${changeSide === "ar" ? "ul_ar" : "ul_en"}`}>
               <li>
-                <a href="@">{t("services")}</a>
+                <Link to="/services">{t("services")}</Link>
               </li>
               <li>
                 <a href="@">{t("what_makes_difference")}</a>

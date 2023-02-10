@@ -7,6 +7,7 @@ import './App.scss';
 //** import components  */
 import WhoMernan from './pages/WhoMernan/WhoMernan';
 import LandingPage from './pages/LandingPage/LandingPage';
+import Services from './pages/Services/Services';
 
 
 const App= ()=> {
@@ -16,6 +17,7 @@ const App= ()=> {
               <Routes>
                 <Route path="/" element={<LandingPage/>}/>
                 <Route path="/mernan" element={<WhoMernan/>}/>
+                <Route path="/services" element={<Services/>}/>
               </Routes>
             </BrowserRouter>
     </div>

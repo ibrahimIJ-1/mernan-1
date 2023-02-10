@@ -1,4 +1,4 @@
-import React, { useContext } from "react";
+import React, { useContext, useState } from "react";
 
 import "./WhoUs.scss";
 
@@ -11,14 +11,10 @@ import { useTranslation } from "react-i18next";
 import { BsArrowRight } from "react-icons/bs";
 import { BsArrowLeft } from "react-icons/bs";
 
-//** import images */
-import Hero from "../../assets/images/hero.svg";
-import Hero_ar from "../../assets/images/hero_ar.svg";
-
 //**import useNavigate from react-router-don */
-import { useNavigate } from 'react-router-dom';
+import { useNavigate } from "react-router-dom";
 
-const WhoUs = () => {
+const WhoUs = ({ image_en, image_ar, title, title_, text, button }) => {
   //** this is state to change side rtl and ltr */
   const { changeSide } = useContext(StateContext);
 
@@ -26,15 +22,16 @@ const WhoUs = () => {
 
   const navigate = useNavigate();
 
-  const ChangeRoute = ()=> {
-    navigate("/mernan")
-  }
+
+  const ChangeRoute = () => {
+    navigate("/mernan");
+  };
 
   return (
     <div className="who_us" dir={`${changeSide === "ar" ? "rtl" : "ltr"}`}>
       <div className="text">
         <h2 className={`${changeSide === "ar" && "active"}`}>
-          {t("we_transfer_your_work")} <span>{t("world_full")}</span>
+          {t(`${title}`)} <span>{t(`${title_}`)}</span>
           {changeSide === "ar" && (
             <div>
               <div className="line4"></div>
@@ -50,7 +47,7 @@ const WhoUs = () => {
             </div>
           )}
         </h2>
-        <p className="mernan">{t("mernan_is_a_world")}</p>
+        <p className="mernan">{t(`${text}`)}</p>
         <div
           className={`${
             changeSide === "ar" ? "active_ar" : "active_en"
@@ -74,8 +71,11 @@ const WhoUs = () => {
           </div>
         </div>
         <div className="buttons">
-          <button onClick={ChangeRoute} className={`${changeSide === "ar" && "who_ar"} who_mernan`}>
-            <span>{t("who_is_mernan")}</span>
+          <button
+            onClick={ChangeRoute}
+            className={`${changeSide === "ar" && "who_ar"} who_mernan`}
+          >
+            <span>{t(`${button}`)}</span>
             <span>
               {changeSide === "en" ? (
                 <BsArrowRight className="arrow" />
@@ -85,9 +85,16 @@ const WhoUs = () => {
             </span>
           </button>
           <button
-            className={`${changeSide === "ar" && "portfolio_ar"} portfolio`}
+            className={`${changeSide === "ar" && "portfolio_ar"} portfolio is-active`}
           >
-            {t("portfolio")}
+            <span>{t("portfolio")}</span>
+            <span className="arrow">
+              {changeSide === "ar" ? (
+                <BsArrowLeft className="arrow" />
+              ) : (
+                <BsArrowRight className="arrow" />
+              )}
+            </span>
           </button>
         </div>
       </div>
@@ -95,9 +102,9 @@ const WhoUs = () => {
         className={`${changeSide === "ar" ? "image_ar" : "image_en"} image_`}
       >
         {changeSide === "ar" ? (
-          <img src={Hero_ar} alt="" />
+          <img src={`${image_ar}`} alt="" />
         ) : (
-          <img src={Hero} alt="" />
+          <img src={`${image_en}`} alt="" />
         )}
       </div>
     </div>

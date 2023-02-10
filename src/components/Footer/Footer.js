@@ -66,7 +66,7 @@ const Footer = ({color1 , color2 , image}) => {
                 <span>{t("work_with_us")}</span>
                 <span>
                     {
-                        changeSide === "en" ? <BsArrowRight className="arrow"/> : <BsArrowLeft className="arrow"/>
+                        changeSide === "ar" ? <BsArrowLeft className="arrow"/> : <BsArrowRight className="arrow"/>
                     }
                 </span>
             </button>
