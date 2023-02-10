@@ -103,3 +103,175 @@
         }
     }
 }
+
+@media only screen and (max-width:1199px){
+    .way_of_work{
+        h2{
+            font-size: 30px;
+            
+            &::after{
+                content: "";
+                width: 42px;
+                height: 42px;
+            }
+        }
+    }
+
+}
+
+@media only screen and (max-width:1149px){
+    .way_of_work{
+        h2{
+            font-size: 30px;
+            
+            &::after{
+                content: "";
+                width: 42px;
+                height: 42px;
+            }
+        }
+        .body{
+            padding: 0px 50px;
+            .card_way{
+                width: 375px;
+                height: 490px;
+
+                 
+            h3{
+                font-size: 25px;
+            }
+
+            .button_{
+                position: absolute;
+                bottom: 40px;
+            }
+            
+            .options{
+                div{
+                    display: flex;
+                    align-items: center;
+                    justify-content:space-between;
+                    margin-top: 10px;
+
+                    span{
+                        display: grid;
+                        place-items: center;
+                        width: 40px;
+                        height:40px;
+                    }
+                    p{
+                        font-size: 18px;        
+                    }
+                }
+            }
+            }
+        }
+    }
+
+}
+
+
+@media only screen and (min-width:1500px){
+    .way_of_work{
+        h2{
+            font-size: 49px;
+            
+            &::after{
+                content: "";
+                width: 62px;
+                height: 62px;
+            }
+        }
+        .body{
+            padding: 0px 100px;
+            .card_way{
+                width: 450px;
+                height: 560px;
+
+                 
+            h3{
+                font-size: 35px;
+            }
+
+            .button_{
+                position: absolute;
+                bottom: 40px;
+            }
+            
+            .options{
+                div{
+                    display: flex;
+                    align-items: center;
+                    justify-content:space-between;
+                    margin-top: 10px;
+
+                    span{
+                        display: grid;
+                        place-items: center;
+                        width: 50px;
+                        height:50px;
+                    }
+                    p{
+                        font-size: 25px;        
+                    }
+                }
+            }
+            }
+        }
+    }
+
+}
+
+
+@media only screen and (min-width:1900px){
+    .way_of_work{
+        h2{
+            font-size: 59px;
+            
+            &::after{
+                content: "";
+                width: 72px;
+                height: 72px;
+            }
+        }
+        .body{
+            padding: 0px 150px;
+            .card_way{
+                width: 480px;
+                height: 600px;
+
+                 
+            h3{
+                font-size: 40px;
+            }
+
+            .button_{
+                position: absolute;
+                bottom: 40px;
+            }
+            
+            .options{
+                div{
+                    display: flex;
+                    align-items: center;
+                    justify-content:space-between;
+                    margin-top: 10px;
+
+                    span{
+                        display: grid;
+                        place-items: center;
+                        width: 60px;
+                        height:60px;
+                    }
+                    p{
+                        font-size: 28px;        
+                    }
+                }
+            }
+            }
+        }
+    }
+
+}
+
+

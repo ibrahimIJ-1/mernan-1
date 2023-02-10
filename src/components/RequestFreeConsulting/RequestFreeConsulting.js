@@ -2,6 +2,9 @@ import React, { useContext } from "react";
 
 import "./RequestFreeConsulting.scss";
 
+import PhoneInput from "react-phone-input-2";
+// import "react-phone-input-2/lib/style.css";
+
 //** state management */
 import { StateContext } from "../StateProvider";
 
@@ -19,7 +22,10 @@ const RequestFreeConsulting = () => {
   const { t } = useTranslation();
 
   return (
-    <div className={`${changeSide === 'ar' ? "request_ar" : "request_en"} request`} dir={`${changeSide === "ar" ? "rtl" : "ltr"}`}>
+    <div
+      className={`${changeSide === "ar" ? "request_ar" : "request_en"} request`}
+      dir={`${changeSide === "ar" ? "rtl" : "ltr"}`}
+    >
       <h2>{t("request_free_consulting")}</h2>
       <div className="body">
         <div className="section">
@@ -37,7 +43,7 @@ const RequestFreeConsulting = () => {
               </div>
               <div className="mb-3 col">
                 <label for="exampleFormControlInput1" class="form-label">
-                {t("last_name")}
+                  {t("last_name")}
                 </label>
                 <input
                   type="text"
@@ -51,11 +57,7 @@ const RequestFreeConsulting = () => {
                 <label for="exampleFormControlInput1" class="form-label">
                   {t("mobile_number")}
                 </label>
-                <input
-                  type="number"
-                  class="form-control"
-                  id="exampleFormControlInput1"
-                />
+                <PhoneInput specialLabel={""} country={"sa"} />
               </div>
               <div class="mb-3 col">
                 <label for="exampleFormControlInput1" class="form-label">
@@ -109,7 +111,11 @@ const RequestFreeConsulting = () => {
           </form>
         </div>
         <div className="image">
-          {changeSide === "ar" ? <img src={image2} alt="" /> : <img src={image1} alt="" />}
+          {changeSide === "ar" ? (
+            <img src={image2} alt="" />
+          ) : (
+            <img src={image1} alt="" />
+          )}
         </div>
       </div>
     </div>

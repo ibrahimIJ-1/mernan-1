@@ -38,6 +38,7 @@ const OurServices = () => {
             item1={"achieve_financial_success"}
             item2={"good_targeting_of_customers"}
             item3={"increase"}
+            color={"#fcd833"}
           />
           <Card
             image={image2}
@@ -45,6 +46,7 @@ const OurServices = () => {
             item1={"make_the_website"}
             item2={"unique_graphic_design"}
             item3={"focus"}
+            color={"#ec92c4"}
           />
           <Card
             image={image1}
@@ -52,6 +54,7 @@ const OurServices = () => {
             item1={"build_a_distinctive"}
             item2={"brand_connection"}
             item3={"recognize_your_brand"}
+            color={"#16a8a3"}
           />
           <Card
             image={image5}
@@ -59,6 +62,7 @@ const OurServices = () => {
             item1={"effective_communication"}
             item2={"create_a_strong"}
             item3={"take_your_brand"}
+            color={"#7a00ca"}
           />
           <Card
             image={image4}
@@ -66,6 +70,7 @@ const OurServices = () => {
             item1={"strengthening"}
             item2={"gain_the_trust"}
             item3={"increase_sales"}
+            color={"#f89600"}
           />
         </div>
       </div>

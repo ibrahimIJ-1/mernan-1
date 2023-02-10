@@ -82,3 +82,105 @@
         }
     }
 }
+
+@media only screen and (max-width:1199px){
+    .what_makes_difference{
+        h2{
+            font-size: 30px;
+            &::after{
+                content: "";
+                width: 42px;
+                height: 42px;
+            }
+        }
+    }
+}
+
+@media only screen and (min-width:1500px){
+    .what_makes_difference{
+        h2{
+            font-size: 49px;
+            &::after{
+                content: "";
+                width: 62px;
+                height: 62px;
+            }
+        }
+        .differences{
+            margin-top: 30px;
+            padding: 0px 100px;
+            .difference{
+                width: 280px;
+                height: 310px;
+    
+                &.active{
+                    margin-top: 120px;
+                }
+    
+                .icon{
+                    width: 60px;
+                    height: 60px;
+                }
+                div{
+                    text-align: center;
+                    line-height: 0px;
+                    margin: 10px auto;
+                    h3{
+                        font-size: 40px;            
+                    }
+                    img{
+                        width: 80%;
+                    }
+                }
+                p{
+                    font-size: 25px;
+                }
+            }
+        }
+    }
+}
+
+@media only screen and (min-width:1900px){
+    .what_makes_difference{
+        h2{
+            font-size: 59px;
+            &::after{
+                content: "";
+                width: 72px;
+                height: 72px;
+            }
+        }
+        .differences{
+            padding: 0px 130px;
+            margin-top: 50px;
+            .difference{
+                width: 310px;
+                height: 330px;
+    
+                &.active{
+                    margin-top: 120px;
+                }
+    
+                .icon{
+                    width: 70px;
+                    height: 70px;
+                }
+                div{
+                    text-align: center;
+                    line-height: 0px;
+                    margin: 10px auto;
+                    h3{
+                        font-size: 48px;            
+                    }
+                    img{
+                        width: 80%;
+                    }
+                }
+                p{
+                    font-size: 30px;
+                }
+            }
+        }
+    }
+}
+

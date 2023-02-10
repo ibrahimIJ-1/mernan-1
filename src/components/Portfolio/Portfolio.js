@@ -30,13 +30,15 @@ const Portfolio = () => {
       <h2>{t("portfolio")}</h2>
       <div className="portfolio_card">
       <Swiper
-        slidesPerView={2}
-        spaceBetween={0}
+        slidesPerView={3}
+        spaceBetween={100}
         centeredSlides={true}
         autoplay={{
           delay: 1500,
           disableOnInteraction: false,
         }}
+        pagination={{
+          "clickable": true}}
         navigation={true}
         modules={[Autoplay, Pagination, Navigation]}
         className="mySwiper"

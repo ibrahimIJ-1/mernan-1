@@ -45,8 +45,11 @@
     }
     .rating{
         height: 20px;
+        display: flex;
+        align-items: center;
+        justify-content:center;
         img{
-            height: 16px;
+            height:100%;
         }
     }
     .body{
@@ -129,6 +132,13 @@
     .card_client{
         width: 480px;
         height: 320px;
+
+        .rating{
+            height: 25px;
+            img{
+                height:100%;
+            }
+        }
         .head{
             .avatar{
                 width: 60px;
@@ -157,6 +167,14 @@
     .card_client{
         width: 520px;
         height: 340px;
+
+        .rating{
+            height: 30px;
+            img{
+                height:100%;
+            }
+        }
+
         .head{
             .avatar{
                 width: 70px;

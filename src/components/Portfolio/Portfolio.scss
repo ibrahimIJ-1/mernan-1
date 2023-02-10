@@ -20,7 +20,7 @@
             width: 52px;
             height: 52px;
             border-radius: 50%;
-            background-color: var(--color4);
+            background-color: var(--color7);
             display: block;
             position: absolute;
             top:0px;
@@ -29,5 +29,67 @@
     }
     .portfolio_card{
         margin-top: 60px;
+    }
+
+    .mySwiper{
+        img{
+            width: 400px;
+            height: 350px;
+        }
+    }
+}
+
+@media only screen and (max-width:1200px){
+    .portfolio{
+        .mySwiper{
+            img{
+                width: 340px;
+                height: 290px;
+            }
+        }
+    }
+}
+
+@media only screen and (min-width:1500px){
+    .portfolio{
+        h2{
+            font-size: 49px;
+            &::after{
+                content: "";
+                width: 62px;
+                height: 62px;
+            }
+        }
+        .portfolio_card{
+            margin-top: 80px;
+        }
+        .mySwiper{
+            img{
+                width: 440px;
+                height: 390px;
+            }
+        }
+    }
+}
+
+@media only screen and (min-width:1900px){
+    .portfolio{
+        h2{
+            font-size: 59px;
+            &::after{
+                content: "";
+                width: 72px;
+                height: 72px;
+            }
+        }
+        .portfolio_card{
+            margin-top: 100px;
+        }
+        .mySwiper{
+            img{
+                width: 500px;
+                height: 450px;
+            }
+        }
     }
 }

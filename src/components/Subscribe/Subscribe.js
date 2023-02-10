@@ -19,8 +19,9 @@ const Subscribe = () => {
     <div className="subscribe" dir={`${changeSide === "ar" ? "rtl" : "ltr"}`}>
       <div className="part1">
         <p>
-          {t("subscribe")} <span>{t("world_of_marketing")}</span>
+          {t("subscribe")} 
         </p>
+        <span>{t("world_of_marketing")}</span>
       </div>
       <div className={`${changeSide === "ar" ? "part2_ar" : "part2_en"} part2`}>
         <div className="image">

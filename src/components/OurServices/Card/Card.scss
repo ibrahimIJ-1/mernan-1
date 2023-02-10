@@ -13,14 +13,8 @@
     align-items: center;
     justify-content: center;
     text-align: center;
-    pointer-events: none;
-    transition:all 1s ease;
-
-    &:hover{
-        background:#16a8a3;
-        color:#fff;
-    }
-
+    transition:all 0.7s ease;
+    color:var(--color2); 
 
     .title{
         display: flex;
@@ -36,7 +30,6 @@
             font-weight: 700;
             font-size: 27px;
             line-height: 140%;
-            color:var(--color2);   
         }
     }
 
@@ -47,7 +40,6 @@
         width: 123px;
         height: 133px;
         border-radius:10px 0px 0px 0px;
-        pointer-events: auto;
     }
     .body{
         display: flex;
@@ -61,8 +53,7 @@
         justify-content:center;
         margin-top:20px;
         p{
-            margin:0px 0px 0px 20px;
-            color:var(--color2);  
+            margin:0px 0px 0px 20px; 
             text-align:left;
             line-height:140%;
             font-size:17px;
@@ -112,4 +103,182 @@
             }
         }
     }
+}
+
+
+
+@media only screen and (max-width:1200px){
+    .card_service{
+        width: 322px;
+        height: 514px;
+    
+    .title{
+
+        h3{
+            font-size: 28px;
+            line-height: 140%;
+        }
+    }
+    .service{
+        width: 103px;
+        height: 113px;
+    }
+
+    .body{
+        div{
+            p{
+                font-size:16px;
+            }
+        }
+        .button_service{
+            button{
+            padding: 15px 17px;
+            gap: 10px;
+            width: 200px;
+            height: 51px;
+            span{
+                font-size: 18px;
+            }
+            }
+        }
+    }
+}
+}
+
+@media only screen and (max-width:1080px){
+    .card_service{
+        width: 300px;
+        height: 480px;
+    
+    .title{
+
+        h3{
+            font-size: 25px;
+            line-height: 140%;
+        }
+    }
+    .service{
+        width: 103px;
+        height: 113px;
+    }
+
+    .body{
+        div{
+            p{
+                font-size:16px;
+            }
+        }
+        .button_service{
+            button{
+            padding: 15px 17px;
+            gap: 10px;
+            width: 200px;
+            height: 51px;
+            span{
+                font-size: 18px;
+            }
+            }
+        }
+    }
+}
+}
+
+
+@media only screen and (min-width:1500px){
+    .card_service{
+        width: 442px;
+        height: 574px;
+    
+    .title{
+
+        h3{
+            font-family: 'Almarai';
+            font-style: normal;
+            font-weight: 700;
+            font-size: 35px;
+            line-height: 140%;
+        }
+    }
+    .body{
+        div{
+            p{
+                font-size:22px;
+            }
+        }
+    }
+}
+}
+
+
+@media only screen and (min-width:1700px){
+    .card_service{
+        width: 472px;
+        height: 604px;
+    
+    .title{
+
+        h3{
+            font-family: 'Almarai';
+            font-style: normal;
+            font-weight: 700;
+            font-size: 40px;
+            line-height: 140%;
+        }
+    }
+    .body{
+        div{
+            p{
+                font-size:25px;
+            }
+        }
+        .button_service{
+            button{
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content:center;
+            padding: 18px 20px;
+            gap: 10px;
+            width: 250px;
+            height: 71px;
+            span{
+                font-family: 'Almarai';
+                font-style: normal;
+                font-weight: 700;
+                font-size: 25px;
+                line-height: 140%;
+                flex: none;
+                order: 0;
+                flex-grow: 0;   
+                color:var(--color5);             
+            }
+            }
+        }
+    }
+}
+}
+
+@media only screen and (min-width:1900px){
+    .card_service{
+        width: 502px;
+        height: 644px;
+    
+    .title{
+
+        h3{
+            font-family: 'Almarai';
+            font-style: normal;
+            font-weight: 700;
+            font-size: 40px;
+            line-height: 140%;
+        }
+    }
+    .body{
+        div{
+            p{
+                font-size:25px;
+            }
+        }
+    }
+}
 }

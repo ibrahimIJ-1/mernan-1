@@ -63,6 +63,8 @@ const PreviousClients = () => {
           delay: 1500,
           disableOnInteraction: false,
         }}
+        pagination={{
+          "clickable": true}}
         navigation={true}
         modules={[Autoplay, Pagination, Navigation]}
         className="mySwiper"

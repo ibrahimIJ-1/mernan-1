@@ -7,7 +7,7 @@
 
     .part1{
         display: flex;
-        align-items: center;
+        // align-items: center;
         justify-content: center;
         p{
             font-family: 'Almarai';
@@ -16,22 +16,26 @@
             font-size: 35px;
             line-height: 140%;   
             color: var(--color5);
-
-            span{
-                color:var(--color3);
-                position: relative;
-                z-index: 111;
-                &::after{
-                    content: "";
-                    width: 52px;
-                    height: 52px;
-                    border-radius: 50%;
-                    background-color: var(--color7);
-                    display: block;
-                    position: absolute;
-                    top:0px;
-                    z-index:-1;                 
-                }
+        }
+        span{
+            color:var(--color3);
+            position: relative;
+            z-index: 111;
+            font-family: 'Almarai';
+            font-style: normal;
+            font-weight: 700;
+            font-size: 35px;
+            line-height: 140%;  
+            &::after{
+                content: "";
+                width: 52px;
+                height: 52px;
+                border-radius: 50%;
+                background-color: var(--color7);
+                display: block;
+                position: absolute;
+                top:0px;
+                z-index:-1;                 
             }
         }
     }
