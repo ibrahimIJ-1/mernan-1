@@ -28,14 +28,15 @@ const Portfolio = () => {
     <div className="portfolio" dir={`${changeSide === "ar" ? "rtl" : "ltr"}`}>
       <h2>{t("portfolio")}</h2>
       <div className="portfolio_card">
-        <Swiper
+        {/* <Swiper
           slidesPerView={3}
-          spaceBetween={100}
+          spaceBetween={0}
           centeredSlides={true}
-          autoplay={{
-            delay: 1500,
-            disableOnInteraction: false,
-          }}
+          // autoplay={{
+          //   delay: 1500,
+          //   disableOnInteraction: false,
+          // }}
+          autoplay={false}
           pagination={{
             clickable: true,
             el: null,
@@ -44,7 +45,77 @@ const Portfolio = () => {
           modules={[Autoplay, Pagination, Navigation]}
           className="mySwiper"
           loop={true}
+          breakpoints={{
+            640: {
+              slidesPerView: 1,
+            },
+            768: {
+              slidesPerView: 1,
+            },
+            1024: {
+              slidesPerView: 3,
+            },
+          }}
+          id="portfolio"
         >
+          <SwiperSlide>
+            <img src={image1} alt="" />
+          </SwiperSlide>
+          <SwiperSlide>
+            <img src={image2} alt="" />
+          </SwiperSlide>
+          <SwiperSlide>
+            <img src={image3} alt="" />
+          </SwiperSlide>
+          <SwiperSlide>
+            <img src={image1} alt="" />
+          </SwiperSlide>
+          <SwiperSlide>
+            <img src={image2} alt="" />
+          </SwiperSlide>
+          <SwiperSlide>
+            <img src={image3} alt="" />
+          </SwiperSlide>
+          <SwiperSlide>
+            <img src={image1} alt="" />
+          </SwiperSlide>
+          <SwiperSlide>
+            <img src={image2} alt="" />
+          </SwiperSlide>
+          <SwiperSlide>
+            <img src={image3} alt="" />
+          </SwiperSlide>
+        </Swiper> */}
+        <Swiper
+          slidesPerView={3}
+          spaceBetween={0}
+          loop={true}
+          pagination={{
+            clickable: true,
+          }}
+          centeredSlides={true}
+          navigation={true}
+          modules={[Pagination, Navigation]}
+          className="mySwiper"
+        >
+          <SwiperSlide>
+            <img src={image1} alt="" />
+          </SwiperSlide>
+          <SwiperSlide>
+            <img src={image2} alt="" />
+          </SwiperSlide>
+          <SwiperSlide>
+            <img src={image3} alt="" />
+          </SwiperSlide>
+          <SwiperSlide>
+            <img src={image1} alt="" />
+          </SwiperSlide>
+          <SwiperSlide>
+            <img src={image2} alt="" />
+          </SwiperSlide>
+          <SwiperSlide>
+            <img src={image3} alt="" />
+          </SwiperSlide>
           <SwiperSlide>
             <img src={image1} alt="" />
           </SwiperSlide>

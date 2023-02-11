@@ -171,6 +171,7 @@
             justify-content: flex-start;
             padding: 10px 0px;
             margin: 20px 0px 50px 0px;
+            
             .who_mernan{
                 background-color:var(--color3); 
                         border: none;
@@ -218,6 +219,7 @@
                 background: none;
                 color:var(--color5);
 
+                
                 &.portfolio_ar{
                     height: 79px;
                     cursor: pointer;
@@ -227,7 +229,7 @@
                 }
                 &:hover{
                     .arrow{
-                        display: flex;
+                        display: inline-block;
                     }
                 }
             }
@@ -419,7 +421,7 @@
         .portfolio{
             height: 69px;
             font-size: 25px;
-
+            transition: all 0.5s ease-in-out;
             &.portfolio_ar{
                 height: 69px;
                 display: flex;
