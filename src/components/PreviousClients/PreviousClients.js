@@ -82,10 +82,11 @@ const PreviousClients = () => {
           slidesPerView={3}
           spaceBetween={100}
           centeredSlides={true}
-          autoplay={{
-            delay: 1500,
-            disableOnInteraction: false,
-          }}
+          // autoplay={{
+          //   delay: 1500,
+          //   disableOnInteraction: false,
+          // }}
+          autoplay={false}
           pagination={{
             clickable: true,
             el: null,
