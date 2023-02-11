@@ -115,3 +115,50 @@
     }
 
 }
+
+@media only screen and (min-width: 1400px){
+    .subscribe{
+        .part2{
+            &.part2_en{
+                .form-control{
+                    // margin-left:40px;
+                    left:28%;
+                }
+                .search button{
+                    right:-190px;
+                }
+            }
+
+            &.part2_ar{
+                .form-control{
+                    right:24%;
+                }
+                .search button{
+                    left:-150px;
+                }
+            }
+        }
+    }
+}
+
+@media only screen and (min-width: 1500px){
+    .subscribe{
+        .part1{
+            display: flex;
+            // align-items: center;
+            justify-content: center;
+            p{
+                font-size: 40px;
+            }
+            span{
+                font-size: 40px;
+                margin: 0px 10px;
+                &::after{
+                    content: "";
+                    width: 62px;
+                    height: 62px;                
+                }
+            }
+        }
+    }
+}

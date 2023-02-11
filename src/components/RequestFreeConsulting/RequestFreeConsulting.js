@@ -3,7 +3,7 @@ import React, { useContext } from "react";
 import "./RequestFreeConsulting.scss";
 
 import PhoneInput from "react-phone-input-2";
-// import "react-phone-input-2/lib/style.css";
+import "react-phone-input-2/lib/bootstrap.css";
 
 //** state management */
 import { StateContext } from "../StateProvider";
@@ -57,7 +57,15 @@ const RequestFreeConsulting = () => {
                 <label for="exampleFormControlInput1" class="form-label">
                   {t("mobile_number")}
                 </label>
-                <PhoneInput specialLabel={""} country={"sa"} />
+                <div dir="ltr" style={{ textAlign: "left" }}>
+                  <PhoneInput
+                    inputStyle={{
+                      width:"100%"
+                    }}
+                    specialLabel={""}
+                    country={"sa"}
+                  />
+                </div>
               </div>
               <div class="mb-3 col">
                 <label for="exampleFormControlInput1" class="form-label">

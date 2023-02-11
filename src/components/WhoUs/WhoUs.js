@@ -32,20 +32,6 @@ const WhoUs = ({ image_en, image_ar, title, title_, text, button }) => {
       <div className="text">
         <h2 className={`${changeSide === "ar" && "active"}`}>
           {t(`${title}`)} <span>{t(`${title_}`)}</span>
-          {changeSide === "ar" && (
-            <div>
-              <div className="line4"></div>
-              <div className="line5"></div>
-              <div className="line6"></div>
-            </div>
-          )}
-          {changeSide === "en" && (
-            <div>
-              <div className="line1"></div>
-              <div className="line2"></div>
-              <div className="line3"></div>
-            </div>
-          )}
         </h2>
         <p className="mernan">{t(`${text}`)}</p>
         <div
@@ -77,10 +63,10 @@ const WhoUs = ({ image_en, image_ar, title, title_, text, button }) => {
           >
             <span>{t(`${button}`)}</span>
             <span>
-              {changeSide === "en" ? (
-                <BsArrowRight className="arrow" />
-              ) : (
+              {changeSide === "ar" ? (
                 <BsArrowLeft className="arrow" />
+              ) : (
+                <BsArrowRight className="arrow" />
               )}
             </span>
           </button>

@@ -25,7 +25,7 @@ const StartWorking = () => {
             <img src={image} alt=""/>
         </div>
         <div className="list">
-            <div>
+            <div className="text_">
                 <span className="number">1</span>
                 <span className="text">{t("choose_the_package")}</span>
             </div>
