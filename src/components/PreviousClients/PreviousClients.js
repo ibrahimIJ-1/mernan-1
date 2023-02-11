@@ -74,6 +74,36 @@ const PreviousClients = () => {
           <SwiperSlide>
             <img src={image} alt="" />
           </SwiperSlide>
+          <SwiperSlide>
+            <img src={image} alt="" />
+          </SwiperSlide>
+          <SwiperSlide>
+            <img src={image} alt="" />
+          </SwiperSlide>
+          <SwiperSlide>
+            <img src={image} alt="" />
+          </SwiperSlide>
+          <SwiperSlide>
+            <img src={image} alt="" />
+          </SwiperSlide>
+          <SwiperSlide>
+            <img src={image} alt="" />
+          </SwiperSlide>
+          <SwiperSlide>
+            <img src={image} alt="" />
+          </SwiperSlide>
+          <SwiperSlide>
+            <img src={image} alt="" />
+          </SwiperSlide>
+          <SwiperSlide>
+            <img src={image} alt="" />
+          </SwiperSlide>
+          <SwiperSlide>
+            <img src={image} alt="" />
+          </SwiperSlide>
+          <SwiperSlide>
+            <img src={image} alt="" />
+          </SwiperSlide>
         </Swiper>
       </div>
 

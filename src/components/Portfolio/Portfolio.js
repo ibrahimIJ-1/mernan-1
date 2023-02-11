@@ -92,6 +92,11 @@ const Portfolio = () => {
           loop={true}
           pagination={{
             clickable: true,
+            el: null,
+          }}
+          autoplay={{
+            delay: 1500,
+            disableOnInteraction: false,
           }}
           centeredSlides={true}
           navigation={true}
